@@ -216,6 +216,36 @@
 // }
 // console.log(merge)
 
+/**
+ * Problem: Two Sum
+ * Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+ * 
+ * Time Complexity: O(n) - Single pass using a Map
+ * Space Complexity: O(n) - Storing elements in the Map
+ */
+
+// function twoSum(nums, target) {
+//     const map = new Map(); // Stores value -> index
+    
+//     for (let i = 0; i < nums.length; i++) {
+//         const complement = target - nums[i];
+        
+//         // If complement exists in our map, we found our pair!
+//         if (map.has(complement)) {
+//             return [map.get(complement), i];
+//         }
+        
+//         // Otherwise, store current element and its index
+//         map.set(nums[i], i);
+//     }
+    
+//     return [];
+// }
+
+// Example usage:
+// console.log(twoSum([2, 7, 11, 15], 9)); // Output: [0, 1]
+
+
 let height = [0,1,0,2,1,0,1,3,2,1,2,1]
 var trap = function(height) {
     let left = new Array(height.length);
